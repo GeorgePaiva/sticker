@@ -1,6 +1,6 @@
 package service.extractor;
 
-import domain.contents.Contents;
+import domain.Contents;
 
 import java.util.List;
 

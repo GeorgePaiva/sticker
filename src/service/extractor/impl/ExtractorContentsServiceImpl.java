@@ -1,6 +1,6 @@
 package service.extractor.impl;
 
-import domain.contents.Contents;
+import domain.Contents;
 import service.extractor.ExtractorContentsService;
 import util.JsonParser;
 
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class ImdbContentsExtractorServiceImpl implements ExtractorContentsService {
+public class ExtractorContentsServiceImpl implements ExtractorContentsService {
 
     public List<Contents> extractorContents(String body) {
 

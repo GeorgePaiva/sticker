@@ -1,4 +1,4 @@
-package domain.contents;
+package domain;
 
 /**
  * @author georgepaiva.dev

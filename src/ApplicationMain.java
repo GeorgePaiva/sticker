@@ -1,7 +1,7 @@
 import config.ClientHttp;
-import domain.contents.Contents;
+import domain.Contents;
 import service.extractor.ExtractorContentsService;
-import service.extractor.impl.ImdbContentsExtractorServiceImpl;
+import service.extractor.impl.ExtractorContentsServiceImpl;
 import service.stickers.impl.StickersServiceImpl;
 
 import java.io.InputStream;
@@ -13,7 +13,7 @@ public class ApplicationMain {
     public static void main(String[] args) throws Exception {
 
         String url = "https://imdb-api.com/en/API/Top250Movies/k_qwcuiexj";
-        ExtractorContentsService extractor = new ImdbContentsExtractorServiceImpl();
+        ExtractorContentsService extractor = new ExtractorContentsServiceImpl();
 
         ClientHttp http = new ClientHttp();
         String json = http.searchData(url);
